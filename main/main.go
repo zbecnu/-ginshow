@@ -19,6 +19,10 @@ import (
 )
 
 func main()  {
+
+}
+
+func main02()  {
 	signalCh := make(chan os.Signal)
 	signal.Notify(signalCh,syscall.SIGINT,syscall.SIGTERM,syscall.SIGQUIT)
 	go func() {
@@ -72,6 +76,7 @@ func main()  {
 			return
 		}
 	}
+
 
 
 }
